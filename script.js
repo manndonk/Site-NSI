@@ -1,12 +1,12 @@
 let page = 0;
 function toggleDisplay(event) {
-  if (event.key == "ArrowUp") {
+  if (event.key == "ArrowUp" || event.key == "ArrowLeft") {
     if (page != 0) {
       page += 100;
     }
     document.querySelector("body").style.transform = "translateY(" + page.toString() + "vh)";
   }
-  else if (event.key == "ArrowDown") {
+  else if (event.key == "ArrowDown" || event.key == "ArrowRight") {
     if (page != -200) {
       page -= 100;
     }
